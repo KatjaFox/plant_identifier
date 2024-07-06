@@ -127,3 +127,10 @@ yaml=0.2.5=he774522_0
 zipp=3.17.0=py38haa95532_0
 zlib=1.2.13=h8cc25b3_1
 zstd=1.5.5=hd43e919_2
+
+torchvision==0.18.1
+matplotlib==3.7.2
+pandas==2.0.3
+numpy==1.24.3
+tqdm==4.66.4
+timm==0.1.20

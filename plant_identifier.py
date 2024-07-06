@@ -33,3 +33,16 @@ class PlantDataset(Dataset):
     @property
     def classes(self):
         return self.data.classes
+
+
+data_dir = '/plants_dataset/train'
+
+target_to_class = {v: k for k, v in ImageFolder(data_dir).class_to_idx.items()}
+print(target_to_class)
+
+transform = transforms.Compose([
+    transforms.Resize((128, 128)),
+    transforms.ToTensor(),
+])
+
+dataset = PlantDataset(data_dir, transform)
