@@ -37,7 +37,7 @@ class PlantDataset(Dataset):
 
 
 class SimplePlantClassifier(nn.Module):
-    def __init__(self, num_classes=53):
+    def __init__(self, num_classes=3):
         super(SimplePlantClassifier, self).__init__()
         # Where we define all the parts of the model
         self.base_model = timm.create_model('efficientnet_b0', pretrained=True)
