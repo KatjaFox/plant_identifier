@@ -1,2 +1,6 @@
 *.idea
 *.pyc
+plants_dataset/test/**/*.jpg
+plants_dataset/train/**/*.jpg
+plants_dataset/val/**/*.jpg
+
